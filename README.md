@@ -1,2 +1,2 @@
 # MyPublicFolder
-Open to public
+As for my working files sharing.
