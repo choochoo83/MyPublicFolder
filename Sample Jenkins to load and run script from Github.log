@@ -1,0 +1,35 @@
+Started by user ChooSiewKeong
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\RunTestScriptFromGithub
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/choochoo83/MyPublicFolder.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\RunTestScriptFromGithub # timeout=10
+Fetching upstream changes from https://github.com/choochoo83/MyPublicFolder.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.43.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/choochoo83/MyPublicFolder.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/choochoo83/MyPublicFolder.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 5e4965e3c8be869393ac4d5589682617f1cbd456 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 5e4965e3c8be869393ac4d5589682617f1cbd456 # timeout=10
+Commit message: "Renamed"
+ > git.exe rev-list --no-walk 5035da513f417cac873361ba55b1b9ba47a49bb3 # timeout=10
+[RunTestScriptFromGithub] $ python C:\Windows\TEMP\jenkins5864952834818966778.py
+Snooze for 10s...
+[RunTestScriptFromGithub] $ cmd /c call C:\Windows\TEMP\jenkins11751312006220177491.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\RunTestScriptFromGithub>python C:\ProgramData\Jenkins\.jenkins\workspace\RunTestScriptFromGithub\mySelenium-mysql.py 
+Toyota Vios 2024 is a 5 Seater Sedan available between a price range of RM 89,600 - 95,500 in the Malaysia. It is available in 5 colors, 2 variants, 1 engine, and 1 transmissions option: CVT in the Malaysia. The Vios dimensions is 4420 mm L x 1740 mm W x 1480 mm H.
+['89,600']
+89,600
+
+C:\ProgramData\Jenkins\.jenkins\workspace\RunTestScriptFromGithub>exit 0 
+Finished: SUCCESS
